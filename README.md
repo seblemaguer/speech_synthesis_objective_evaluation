@@ -43,7 +43,7 @@ This is research software: Slow and awkward, but easily extensible.
     3. A distance function that takes as input **varargin** (1) test features, (2) reference features and (3) parameters. Returns a computed frame-by-frame distance map between the two utterances.
   * Include the test specification in the conf-file, like this:
 
-```
+```matlab
 % Define the functions and the parameters for your test
 % in a struct with obligatory fields
 % 'name', 'analysisfunction', 'distancefunction'
@@ -78,7 +78,7 @@ invasive_tests= { ...
     4. A model testing function that takes as input **varargin** consting of (1) the model, (2) the test utterance features and (3) parameters, and returns a score for the utterance. Example: scripts/model_test_gmm.m
   * Include the test specification in the conf-file, like this:
 
-```
+```matlab
 % Define the functions and the parameters for your test
 % in a structures; First an analysis/feature extraction
 % function with obligatory fields 'name' and 
