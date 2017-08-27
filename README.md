@@ -114,11 +114,11 @@ non_invasive_tests = { ...
 
 ## What if I want to... ##
 
-###...use my own DTW function?###
+### ...use my own DTW function? ###
 
 Either add your own function or rewrite **evaluate_with_invasive_measures.m** to be more modular. Do it well and make a pull request so it can be incorporated in the pacakge.
 
-###...train a model for the reference speech and use it to evaluate the synthetic speech systems? ###
+### ...train a model for the reference speech and use it to evaluate the synthetic speech systems?  ###
 
 The current scheme is to train a model for the synthetic speech and see how well the reference speech fits it. If you want to do it the other way around, either add your own function or rewrite **evaluate_with_non_invasive_measures.m** to support this reverse order. Do it well and make a pull request so it can be incorporated in the pacakge.
 
